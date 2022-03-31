@@ -27,5 +27,16 @@ public class US06Page extends LoginPage{
     @FindBy (xpath = "//*[@class='filename']//*[@class='innernametext']")
     public WebElement favFileName;
 
+    @FindBy(xpath = "//a[@class='button new']")
+    public WebElement addButton;
+
+    @FindBy(xpath = "//label[@for='file_upload_start']")
+    public WebElement uploadFileButton;
+
+    @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/tbody")
+    public WebElement uploadedFilePage;
+
+
+
 
 }
